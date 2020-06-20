@@ -1,8 +1,8 @@
 def roll_call_dwarves(seven_dwarves)# code an argument here
 seven_dwarves = ["Grumpy", "Doc", "Happy", "Sneezy", "Bashful", "Dopey", "Sleepy"]  # Your code here
-seven_dwarves.each_with_index do |index, name|
+seven_dwarves.each_with_index do |name, index|
   index += 1
-  puts "#{index}. #{name}""
+  puts "#{index}. #{name}"
 end
 end
 
@@ -18,7 +18,10 @@ def long_planeteer_calls(calls)# code an argument here
   call_long.length > 4
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese (cheese)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese.find do |type|
+    cheese_types.include?(type)
+end
 end
