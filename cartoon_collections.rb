@@ -1,11 +1,15 @@
 def roll_call_dwarves(dwarves)# code an argument here
 seven_dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]  # Your code here
-prints seven_dwarves[index].name
+index += 1
+  seven_dwarves.each_with_index doname
 
 end
 
-def summon_captain_planet# code an argument here
+def summon_captain_planet(planeteer)# code an argument here
   # Your code here
+  planeteer.collect do |call|
+    call.capitalize << "!"
+  
 end
 
 def long_planeteer_calls# code an argument here
